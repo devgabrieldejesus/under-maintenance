@@ -236,3 +236,152 @@ footer .container {
     justify-content:center;
 }
 /* ===================================================== responsive ===================================================== */
+@media (max-width:1208px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:1190px) {
+    .warning .container {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    @keyframes warning {
+        0%{transform: translateX(0px)}
+        25%{transform: translateX(-140px)}
+        50%{transform: translateX(-0px)}
+        75%{transform: translateX(140px)}
+        100%{transform: translateX(0px)}
+    }
+}
+
+@media (max-width:1120px) {
+    #banner {
+        height: 450px;
+    }
+
+    #banner h1 {
+        font-size: 35px;
+    }
+
+    #banner p {
+        font-size: 16px;
+    }
+
+    .banner--thumbnail img {
+        width: 400px;
+    }
+}
+
+@media (max-width:926px) {
+    #banner {
+        height: auto;
+    }
+
+    #banner .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .floating-github {
+        right: 0px;
+    }
+
+    .banner--content, .banner--thumbnail {
+        align-items: center;
+    }
+
+    #banner p {
+        text-align: center;
+    }
+
+    .banner--contact-me {
+        width: 160px;
+    }
+
+    .banner--contact-me strong,
+    .banner--see-linkedin strong {
+        font-size: 16px;
+    }
+
+    .banner--see-linkedin {
+        width: 216px;
+        margin-left: 0px;
+    }
+
+    .warning img {
+        padding: 0px;
+    }
+    
+    @keyframes warning {
+        0%{transform: translateX(0px)}
+        25%{transform: translateX(-40px)}
+        50%{transform: translateX(-0px)}
+        75%{transform: translateX(40px)}
+        100%{transform: translateX(0px)}
+    }
+    
+    .contact-me:hover,
+    .banner--contact-me:hover {
+        transform: scale(1);
+        transform: translateX(-10px);
+    }
+
+    .banner--thumbnail img {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:590px) {
+    header .container {
+        justify-content: center;
+    }
+
+    .contact-me {
+        display: none;
+    }
+
+    .warning {
+        display: none;
+    }
+    
+    .floating-github {
+        height: 50px;
+        margin-top: 40px;
+    }
+
+    #banner h1 {
+        font-size: 30px;
+    }
+
+    .banner--content p {
+        max-width: 310px;
+    }
+
+    .banner-options {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .banner--thumbnail img {
+        width: 330px;
+    }
+
+    footer .container {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    header .logo img {
+        width: 300px;
+    }
+
+    .banner--thumbnail img {
+        width: 310px;
+    }
+}
