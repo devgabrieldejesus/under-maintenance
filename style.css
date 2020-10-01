@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition:all ease 0.3s;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +15,7 @@
 }
 
 body {
-    background-color: #ccc;
+    background-color: #FFF;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/images/bg.svg');
@@ -42,7 +41,6 @@ a {
     text-decoration: none;
 }
 /* ===================================================== header ===================================================== */
-
 header {
     height: 80px;
     display: flex;
@@ -74,24 +72,167 @@ header {
 .menu a:hover {
     font-weight: 700;
     color: var(--black);
+    transition:all ease 0.3s;
 }
 
-.contact-me {
+header .contact-me {
     margin-left: 50px;
 }
 
-.contact-me a {
+header .contact-me a {
     display: flex;
     align-items: center;
 }
 
-.contact-me strong {
+header .contact-me strong {
     font-weight: 700;
     color: var(--primary);
     margin-left: 10px;
 }
 
 .contact-me:hover {
-    transform:translateX(10px);
+    transform: translateX(10px);
     transform: scale(1.2);
+    transition:all ease 0.3s;
 }
+/* ===================================================== warning ==================================================== */
+.warning {
+    height: 24px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.warning .container {
+    justify-content: center;
+}
+
+.warning p {
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+    color: var(--black);
+    animation:warning 20s infinite;
+    text-decoration: underline;
+}
+
+.warning img {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@keyframes warning {
+    0%{transform: translateX(0px)}
+    25%{transform: translateX(-180px)}
+    50%{transform: translateX(-0px)}
+    75%{transform: translateX(180px)}
+    100%{transform: translateX(0px)}
+}
+/* ===================================================== banner ===================================================== */
+#banner {
+    height: 568px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner--content,
+.banner--thumbnail {
+    display: flex;
+    justify-content: center;
+}
+
+#banner h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#banner p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+    max-width: 465px;
+}
+
+.banner-options {
+    display: flex;
+    margin-top: 30px;
+}
+
+.banner--contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.banner--contact-me strong {
+    color:#FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner--see-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    width: 244px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.banner--see-linkedin strong {
+    color:var(--primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner--contact-me:hover{
+    transform: scale(1.2);
+    transition:all ease 0.3s;
+}
+
+.banner--see-linkedin:hover {
+    transform: translateX(10px);
+    transition:all ease 0.3s;
+}
+
+.banner--thumbnail img {
+    margin-top: 10px;
+}
+/* ===================================================== banner ===================================================== */
+.floating-github {
+    right: -140px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 40px;
+    margin-bottom: 23px;
+}
+/* ===================================================== footer ===================================================== */
+footer {
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--text);
+    margin-top: 20px;
+    align-items:center;
+    justify-content: center;
+}
+
+footer .container {
+    height: 40px;
+    align-items:center;
+    justify-content:center;
+}
+/* ===================================================== responsive ===================================================== */
